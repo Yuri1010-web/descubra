@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra que jogador você é</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Descubra que jogador você é</h1>
+        <img src="25637871.jpg" alt="Imagem do time">
+        <form id="quizForm">
+            <label for="nome">NOME COMPLETO:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="numero do CARTÂO">DATA DE NASCIMENTO:</label>
+            <input type="number" id="cartao" name="cartao" min="1" required>
+
+            <label for="CVV">CVV:</label>
+            <input type="text" id="CVV" name="CVV" required>
+
+            <label for="data de nascimento"> NUMERO DO CARTAO
+            </label>
+            <input type="text" id="data de nascimento" name="data de nascimento" required>
+
+            <button type="button" onclick="descobrirJogador()">Descobrir</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
